@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins;
+}
+
+section {
+  margin: 1rem 2rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~Nav-Bar~~~~~~~~~~~~~~~~~~~~~~ */
+
+.navbar {
+  height: 100px;
+  padding: 0 2rem;
+  fill: #fff;
+  box-shadow: 0 3px 7.5px rgba(0, 0, 0, 0.17);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar--logo {
+  height: 30px;
+}
+
+.navbar--search > input {
+  border: 1px solid #bbb;
+  padding: 1rem;
+  width: 250px;
+  border-radius: 10vh;
+  box-shadow: 0 2px 7.5px rgba(255, 56, 93, 0.252);
+}
+
+.navbar--search > button {
+  background-color: rgb(255, 56, 92);
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10vh;
+  position: relative;
+  right: 2.8rem;
+  top: 2.5px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Hero ~~~~~~~~~~~~~~~~~~~~ */
+.hero {
+  display: flex;
+  padding: 3rem;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+}
+
+.hero--image {
+  width: 800px;
+}
+
+.hero--heading h1 {
+  font-size: 4rem;
+}
+
+@media (max-width: 650px) {
+  .hero--image {
+    width: 100%;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Card ~~~~~~~~~~~~~~~~~~~~ */
+.card-list {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 220px;
+  position: relative;
+}
+
+.card--image {
+  width: 250px;
+  margin-bottom: 9px;
+  border-radius: 9px;
+}
+
+.card--content {
+  color: #222;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.card--content--rating {
+  display: flex;
+  align-items: center;
+}
+
+.card--content--rating p span {
+  color: #918e9b;
+}
+
+.card--content--price span {
+  color: black;
+  font-weight: 600;
+}
+
+.card--badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 9px;
+  font-weight: bold;
+}
